@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Alcaraz | E-commerce </title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main class="mainContainer">
-    <header class="header">
-      <img src="./images/icon-menu.svg" alt="Menu-icono">
-      <img src="./images/logo.svg" alt="Logo">
+    <title>Alcaraz | E-commerce</title>
 
-      <nav class="navbar">
-        <ul class="navbarItems">
-          <li><a href="#" class="navbarLinks">Collections</a></li>
-          <li><a href="#" class="navbarLinks">Men</a></li>
-          <li><a href="#" class="navbarLinks">Women</a></li>
-          <li><a href="#" class="navbarLinks">About</a></li>
-          <li><a href="#" class="navbarLinks">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- init Navbar modal -->
-       <div class="modalNavbarBg">
-        <nav class="modalNavbar">
-          <img class="modalNavbarCloseIcon" src="./images/icon-close.svg" alt="">
-          <ul class="modalNavbarItems">
-            <li><a href="#" class="modalNavbarLinks">Collections</a></li>
-            <li><a href="#" class="modalNavbarLinks">Men</a></li>
-            <li><a href="#" class="modalNavbarLinks">Women</a></li>
-            <li><a href="#" class="modalNavbarLinks">About</a></li>
-            <li><a href="#" class="modalNavbarLinks">Contact</a></li>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="mainContainer">
+      <header class="header">
+        <img src="./images/icon-menu.svg" alt="Menu-icono" />
+        <img src="./images/logo.svg" alt="Logo" />
+
+        <nav class="navbar">
+          <ul class="navbarItems">
+            <li><a href="#" class="navbarLinks">Collections</a></li>
+            <li><a href="#" class="navbarLinks">Men</a></li>
+            <li><a href="#" class="navbarLinks">Women</a></li>
+            <li><a href="#" class="navbarLinks">About</a></li>
+            <li><a href="#" class="navbarLinks">Contact</a></li>
           </ul>
         </nav>
-       </div>
+        <!-- init Navbar modal -->
+        <div class="modalNavbarBg">
+          <nav class="modalNavbar">
+            <img
+              class="modalNavbarCloseIcon"
+              src="./images/icon-close.svg"
+              alt=""
+            />
+            <ul class="modalNavbarItems">
+              <li><a href="#" class="modalNavbarLinks">Collections</a></li>
+              <li><a href="#" class="modalNavbarLinks">Men</a></li>
+              <li><a href="#" class="modalNavbarLinks">Women</a></li>
+              <li><a href="#" class="modalNavbarLinks">About</a></li>
+              <li><a href="#" class="modalNavbarLinks">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
 
-      <!-- end Navbar modal -->
-    </header>
-  </main>
+        <!-- end Navbar modal -->
+        <div class="headerCartAvatar">
+          <div class="headerCart">
+            <div class="headerCartNotificaction">3</div>
+            <img src="./images/icon-cart.svg" alt="Carrito" />
+          </div>
+          <img src="./images/image-avatar.png" alt="Avatar" />
+        </div>
+      </header>
 
-  
+      <section class="content">
+        <article class="gallery">
+          <div class="galleryImageContainer">
+            <img
+              class="galleryPrevius"
+              src="./images/icon-previous.svg"
+              alt="Previus"
+            />
+            <img class="galleryNext" src="./images/icon-next.svg" alt="Next" />
+          </div>
 
-  
-  
-  
+          <div class="galleryThumnails">
+            <img
+              id="1"
+              class="galleryThumnail"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+              id="2"
+              class="galleryThumnail"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+              id="3"
+              class="galleryThumnail"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+            id="4"
+            class="galleryThumnail"
+            src="./images/image-product-4-thumbnail.jpg"
+            alt="Thumnail"
+          />
+          </div>
+        </article>
 
-  Sneaker Company
+        <article class="details">
+          <h2 class="detailsCompany">Alcaraz </h2>
+          <h2 class="detailsTitle">Celulares </h2>
+          <p class="detailsDescription">These low-profile sneakers are
+            your perfect casual wear companion. Featuring a durable rubber outer sole,
+            they’ll withstand everything the weather can offer.</p>
+            <div class="detailsPrices">
+              <p class="detailsNow">$125.00 <span class="detailsDiscount">50%</span> </p>
+              <p class="detailsBefore">$250.00</p>
+            </div>
+            <div class="detailsProductQuantity">
+              <div class="input">
+                <img  class="inputMinus" src="./images/icon-minus.svg" alt="minus">
+                <input type="number" value="0">
+                <img  class="inputPlus" src="./images/icon-plus.svg" alt="plus">
+              </div>
 
-  Fall Limited Edition Sneakers
+            </div>
+          </article>
+      </section>
+    </main>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    Add to cart
 
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
