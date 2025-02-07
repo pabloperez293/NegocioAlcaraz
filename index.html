@@ -17,7 +17,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
-        font-size: 11px;
+        font-size: 18px;
         text-align: center;
       }
       .attribution a {
@@ -99,43 +99,112 @@
               alt="Thumnail"
             />
             <img
-            id="4"
-            class="galleryThumnail"
-            src="./images/image-product-4-thumbnail.jpg"
-            alt="Thumnail"
-          />
+              id="4"
+              class="galleryThumnail"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="Thumnail"
+            />
           </div>
         </article>
 
         <article class="details">
-          <h2 class="detailsCompany">Alcaraz </h2>
-          <h2 class="detailsTitle">Celulares </h2>
-          <p class="detailsDescription">These low-profile sneakers are
-            your perfect casual wear companion. Featuring a durable rubber outer sole,
-            they’ll withstand everything the weather can offer.</p>
-            <div class="detailsPrices">
-              <p class="detailsNow">$125.00 <span class="detailsDiscount">50%</span> </p>
-              <p class="detailsBefore">$250.00</p>
+          <h2 class="detailsCompany">Alcaraz</h2>
+          <h2 class="detailsTitle">Celulares</h2>
+          <p class="detailsDescription">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="detailsPrices">
+            <p class="detailsNow">
+              $125.00 <span class="detailsDiscount">50%</span>
+            </p>
+            <p class="detailsBefore">$250.00</p>
+          </div>
+          <div class="detailsProductQuantity">
+            <div class="input">
+              <img
+                class="inputMinus"
+                src="./images/icon-minus.svg"
+                alt="minus"
+              />
+              <input class="inputNumber" type="number" value="0" />
+              <img class="inputPlus" src="./images/icon-plus.svg" alt="plus" />
             </div>
-            <div class="detailsProductQuantity">
-              <div class="input">
-                <img  class="inputMinus" src="./images/icon-minus.svg" alt="minus">
-                <input type="number" value="0">
-                <img  class="inputPlus" src="./images/icon-plus.svg" alt="plus">
-              </div>
-
-            </div>
-          </article>
+            <button class="detailsButton">
+              <img src="./images/icon-cart.svg" alt="Agregar" /> Agregar
+            </button>
+          </div>
+        </article>
       </section>
+
+      <!-- init cart modal -->
+      <div class="cartModal">
+        <p class="cartModalTitle">Compra</p>
+        <div class="cartModalCheckoutContainer">
+          <div class="cartModalDetailsContainer">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="producto 1"
+            />
+            <div>
+              <p class="cartModalProduct">Informacion</p>
+              <p class="cartModalProduct">$125 x3 <span>$375.00</span></p>
+            </div>
+            <img class="cartModalDelete" src="./images/icon-delete.svg" alt="delete">
+          </div>
+          <button class="cartModalDelete">Checkout</button>
+        </div>
+      </div>
+      <!-- end cart modal -->
+
+      <!-- init gallery modal -->
+      <div class="modalGalleryBg">
+        <article class="ModalGallery">
+          <img class="ModalGalleryClose" src="./images/icon-close.svg" alt="Close">
+          <div class="ModalGalleryImageContainer">
+            <img
+              class="ModalGalleryPrevius"
+              src="./images/icon-previous.svg"
+              alt="Previus"
+            />
+            <img class="ModalGalleryNext" src="./images/icon-next.svg" alt="Next" />
+          </div>
+          <div class="ModalGalleryThumnails">
+            <img
+              id="m1"
+              class="ModalGalleryThumnail"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+              id="m2"
+              class="ModalGalleryThumnail"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+              id="m3"
+              class="ModalGalleryThumnail"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="Thumnail"
+            />
+            <img
+              id="m4"
+              class="ModalGalleryThumnail"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="Thumnail"
+            />
+          </div>
+        </article>
+      </div>
+      <!-- end gallery modal -->
+
     </main>
 
-    Add to cart
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="attribution">
+      -Creado por
+      <a href="https://portafolioweb001.netlify.app/" target="_blank">Pablo Perez</a>
+      -</footer>
   </body>
 </html>
