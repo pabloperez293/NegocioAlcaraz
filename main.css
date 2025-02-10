@@ -9,4 +9,60 @@ body {
   font-family: "Kumbh Sans", serif;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+}
+@media (min-width: 1115px) {
+  .header {
+    height: 112px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+  }
+}
+.header .headerNavigation {
+  width: 175px;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1115px) {
+  .header .headerNavigation {
+    width: 590px;
+  }
+}
+.header .headerMenu:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115) {
+  .header .headerMenu {
+    display: none;
+  }
+}
+.header .headerCartAvatar {
+  border: 1px solid blue;
+}
+.modalNavbarBg {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
+.mainContainer {
+  width: 375px;
+  border: 1px solid black;
+  margin: auto;
+}
+@media (min-width: 1115px) {
+  .mainContainer {
+    width: 1115px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
