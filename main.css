@@ -44,20 +44,102 @@ body {
   }
 }
 .header .headerCartAvatar {
-  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
 }
-.modalNavbarBg {
+@media (min-width: 1115px) {
+  .header .headerCartAvatar {
+    width: 125px;
+  }
+}
+.header .headerCart {
+  position: relative;
+}
+.header .headerCart .headerCartNotificaction {
   display: none;
+  background-color: hsl(26, 100%, 55%);
+  width: 15px;
+  height: 12px;
+  border-radius: 16px;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #ffffff;
+}
+.header .headerCart:hover {
+  cursor: pointer;
+}
+.header .headerAvatar {
+  width: 24px;
+}
+@media (min-width: 1115px) {
+  .header .headerAvatar {
+    width: 48px;
+  }
+}
+.header .headerAvatar:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+
+.modalNavbarBg {
+  width: 250px;
+  height: 100%;
+  pad: 28px 24px;
+}
+.modalNavbarBg .modalNavbar {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modalNavbarBg .modalNavbarItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  list-style: none;
+  margin-top: 50px;
+}
+.modalNavbarBg .modalNavbarLinks {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.modalNavbarBg .modalNavbarCloseIcon:hover {
+  cursor: pointer;
 }
 
 .navbar {
-  display: none;
+  border: 1px solid blue;
+  width: 400px;
+}
+.navbar .modalNavbarItems {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .modalNavbarLinks {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  display: block;
+  height: 112px;
 }
 
 .mainContainer {
   width: 375px;
   border: 1px solid black;
   margin: auto;
+  position: relative;
 }
 @media (min-width: 1115px) {
   .mainContainer {

@@ -1,3 +1,30 @@
+@use "variables";
+@use "mixins";
+
 .modalNavbarBg{
-    display: none;
+    .modalNavbar{
+    @include mixins.modal-background;
+    }
+    // background-color: variables.$White ;
+    width: 250px;
+    height: 100%;
+    pad: 28px 24px;
+    // display: none;
+    .modalNavbarItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    .modalNavbarLinks{
+        text-decoration: none;
+        color: variables.$Very-dark-blue;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    .modalNavbarCloseIcon:hover{
+        cursor: pointer;
+    }
 }
